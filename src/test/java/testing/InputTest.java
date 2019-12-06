@@ -3,6 +3,7 @@ package testing;
 import org.junit.Assert;
 import org.junit.Test;
 
+import game.Game;
 import game.Player;
 
 
@@ -10,63 +11,46 @@ public class InputTest {
 
 	@Test
 	public void goNorthTest() {
-		Player player = new Player();	
+		Game game = new Game();
+		Player player = new Player();
 		
-		int[] pLoc = player.playerLocation;
-		int xLoc = pLoc[0];
+		int pXLoc = game.playerLocation[0];		
+		player.goNorth(game.playerLocation);	
 		
-		player.goNorth();
-		
-		int [] pMoved = player.playerLocation;
-		int xMoved = pMoved[0];
-		
-		Assert.assertEquals(xLoc+1, xMoved);
+		Assert.assertEquals(pXLoc+1, game.playerLocation[0]);
 	}
 	
 	@Test
 	public void goSouthTest() {
-		Player player = new Player();	
+		Game game = new Game();
+		Player player = new Player();
 		
-		int[] pLoc = player.playerLocation;
-		int xLoc = pLoc[0];
+		int pXLoc = game.playerLocation[0];		
+		player.goSouth(game.playerLocation);	
 		
-		player.goSouth();
-		
-		int [] pMoved = player.playerLocation;
-		int xMoved = pMoved[0];
-		
-		Assert.assertEquals(xLoc-1, xMoved);
+		Assert.assertEquals(pXLoc-1, game.playerLocation[0]);
 	}
 		
 	@Test
 	public void goEastTest() {
-		Player player = new Player();	
+		Game game = new Game();
+		Player player = new Player();
 		
-		int[] pLoc = player.playerLocation;
-		int yLoc = pLoc[0];
+		int pYLoc = game.playerLocation[1];		
+		player.goEast(game.playerLocation);	
 		
-		player.goEast();
-		
-		int [] pMoved = player.playerLocation;
-		int yMoved = pMoved[0];
-		
-		Assert.assertEquals(yLoc+1, yMoved);
+		Assert.assertEquals(pYLoc+1, game.playerLocation[1]);
 	}
-}
 	
 	@Test
 	public void goWestTest() {
-		Player player = new Player();	
+		Game game = new Game();
+		Player player = new Player();
 		
-		int[] pLoc = player.playerLocation;
-		int yLoc = pLoc[0];
+		int pYLoc = game.playerLocation[1];		
+		player.goWest(game.playerLocation);	
 		
-		player.goWest();
-		
-		int [] pMoved = player.playerLocation;
-		int yMoved = pMoved[0];
-		
-		Assert.assertEquals(yLoc-1, yMoved);
+		Assert.assertEquals(pYLoc-1, game.playerLocation[1]);
 	}
 
 }

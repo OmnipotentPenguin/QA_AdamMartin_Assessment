@@ -1,26 +1,40 @@
 package game;
 
-public class Player {
+public class Player {	
 
-	public int[] playerLocation;
-
-	public void goNorth() {
-		// TODO Auto-generated method stub
+	public int[] goNorth(int[] playerLocation) {	
+		
+		int xLocation = playerLocation[0];
+		xLocation++;
+		playerLocation[0] = xLocation;
+		return playerLocation;	
 		
 	}
 
-	public void goSouth() {
-		// TODO Auto-generated method stub
+	public int[] goSouth(int[] playerLocation) {
+		
+		int xLocation = playerLocation[0];
+		xLocation--;
+		playerLocation[0] = xLocation;
+		return playerLocation;	
 		
 	}
 
-	public void goEast() {
-		// TODO Auto-generated method stub
+	public int[] goEast(int[] playerLocation) {
+
+		int yLocation = playerLocation[1];
+		yLocation++;
+		playerLocation[1] = yLocation;
+		return playerLocation;
 		
 	}
 
-	public void goWest() {
-		// TODO Auto-generated method stub
+	public int[] goWest(int[] playerLocation) {
+
+		int yLocation = playerLocation[1];
+		yLocation--;
+		playerLocation[1] = yLocation;
+		return playerLocation;
 		
 	}
 
