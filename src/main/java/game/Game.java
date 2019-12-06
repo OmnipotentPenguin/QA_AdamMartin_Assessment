@@ -17,7 +17,7 @@ public class Game {
 		randomLocation();
 		System.out.println(
 				"You wake up, finding yourself in a misty, grey swampland that stretches as far as the eye can see."
-						+ "\nWith no idea of where you are, you have no choice but to WANDER.");
+						+ "\nWith no idea of where you are, you have no choice but to wander.\n1. WANDER");
 
 		Scanner s = new Scanner(System.in);
 		travelling = true;
@@ -78,7 +78,7 @@ public class Game {
 
 		System.out.println("The compass indicactes there is " + shortDist + "m left.\n");
 		if (travelling == true) {
-			System.out.println("\n\nWhat would you like to do:\n1. Go NORTH\n2. Go EAST\n3. Go SOUTH\n4. Go WEST\n");
+			System.out.println("\nWhat would you like to do:\n1. Go NORTH\n2. Go EAST\n3. Go SOUTH\n4. Go WEST\n5. WANDER\n");
 		}
 				
 
