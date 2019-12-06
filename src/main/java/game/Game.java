@@ -76,8 +76,11 @@ public class Game {
 			travelling = false;
 		}
 
-		System.out.println("The compass indicactes there is " + shortDist
-				+ "m left.\n\nWhat would you like to do:\n1. Go NORTH\n2. Go EAST\n3. Go SOUTH\n4. Go WEST\n");
+		System.out.println("The compass indicactes there is " + shortDist + "m left.\n");
+		if (travelling == true) {
+			System.out.println("\n\nWhat would you like to do:\n1. Go NORTH\n2. Go EAST\n3. Go SOUTH\n4. Go WEST\n");
+		}
+				
 
 	}
 
