@@ -2,6 +2,6 @@ package game;
 
 public enum Actions {
 	
-	NORTH,SOUTH,EAST,WEST;
+	NORTH,SOUTH,EAST,WEST,WANDER;
 
 }
