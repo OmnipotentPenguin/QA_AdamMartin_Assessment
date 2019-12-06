@@ -64,8 +64,19 @@ public class Game {
 
 	private void randomLocation() {
 		Random rand = new Random();
+		int posVal0 = rand.nextInt(2);
+		int posVal1 = rand.nextInt(2);
+		
 		targetCoords[0] = rand.nextInt(5) + 3;
 		targetCoords[1] = rand.nextInt(5) + 3;
+		
+		if (posVal0 == 0) {
+			targetCoords[0] = targetCoords[0]*(-1);
+		}
+		if (posVal1 == 0) {
+			targetCoords[1] = targetCoords[1]*(-1);
+		}
+		
 	}
 
 	private void findDistance() {
