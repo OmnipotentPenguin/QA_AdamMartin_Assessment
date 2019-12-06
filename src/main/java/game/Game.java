@@ -46,17 +46,17 @@ public class Game {
 			System.out.println(
 					"\nYou feel something humming lightly on your arm. Looking down, you notice a compass strapped to your wrist."
 							+ "\nThe four cardinal points are on on its face, with a small dial near the bottom reading a distance and the needle is pointing off into the gloom.\n");
-			break;			
-		case 5:	
-			System.out.println("The gloom seems to loom closer to you, pushing in fronm all sides...");;
 			break;
-			
+		case 5:
+			System.out.println("The gloom seems to loom closer to you, pushing in fronm all sides...");
+			break;
+
 		case 10:
-			System.out.println("You see movement in the corner of your vision, but when you turn to get a proper look, nothing is there...");
+			System.out.println(
+					"You see movement in the corner of your vision, but when you turn to get a proper look, nothing is there...");
 			break;
 		default:
 			break;
-		
 
 		}
 
@@ -66,17 +66,17 @@ public class Game {
 		Random rand = new Random();
 		int posVal0 = rand.nextInt(2);
 		int posVal1 = rand.nextInt(2);
-		
+
 		targetCoords[0] = rand.nextInt(5) + 3;
 		targetCoords[1] = rand.nextInt(5) + 3;
-		
+
 		if (posVal0 == 0) {
-			targetCoords[0] = targetCoords[0]*(-1);
+			targetCoords[0] = targetCoords[0] * (-1);
 		}
 		if (posVal1 == 0) {
-			targetCoords[1] = targetCoords[1]*(-1);
+			targetCoords[1] = targetCoords[1] * (-1);
 		}
-		
+
 	}
 
 	private void findDistance() {
