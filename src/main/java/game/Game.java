@@ -46,6 +46,17 @@ public class Game {
 			System.out.println(
 					"\nYou feel something humming lightly on your arm. Looking down, you notice a compass strapped to your wrist."
 							+ "\nThe four cardinal points are on on its face, with a small dial near the bottom reading a distance and the needle is pointing off into the gloom.\n");
+			break;			
+		case 5:	
+			System.out.println("The gloom seems to loom closer to you, pushing in fronm all sides...");;
+			break;
+			
+		case 10:
+			System.out.println("You see movement in the corner of your vision, but when you turn to get a proper look, nothing is there...");
+			break;
+		default:
+			break;
+		
 
 		}
 
@@ -70,7 +81,7 @@ public class Game {
 			travelling = false;
 		}
 
-		System.out.println("The compass indicactes there is " + shortDist + "m left.\n");
+		System.out.println("The compass indicactes there is " + shortDist + "m left.");
 		if (travelling == true) {
 			System.out.println(
 					"\nWhat would you like to do:\n1. Go NORTH\n2. Go EAST\n3. Go SOUTH\n4. Go WEST\n5. WANDER\n");
