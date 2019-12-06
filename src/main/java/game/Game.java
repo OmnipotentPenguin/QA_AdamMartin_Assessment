@@ -21,7 +21,7 @@ public class Game {
 		Scanner s = new Scanner(System.in);
 		travelling = true;
 		
-		do {
+		while (travelling) {
 			
 			Actions action = getAction(s.nextLine());
 			if (action != null) {
@@ -33,11 +33,10 @@ public class Game {
 					narration(moveCount);
 					moveCount++;
 					findDistance();
-				}
-				
+				}				
 			}			
-		} while (travelling);
-		
+		} //while (travelling);
+		foundLocation();
 		s.close();		
 	}	
 	
@@ -65,8 +64,7 @@ public class Game {
 		String shortDist = df.format(distance);
 		
 		if (distance == 0) {
-			travelling = false;
-			foundLocation();
+			travelling = false;			
 		}
 		
 		System.out.println("The compass indicactes there is "+shortDist+"m left.\n\nWhat would you like to do:\n1. Go NORTH\n2. Go EAST\n3. Go SOUTH\n4. Go WEST\n");
@@ -74,7 +72,9 @@ public class Game {
 	}
 
 	private void foundLocation() {
-		System.out.println("Emerging through the gloom of the swamp, you stumble upon a old house that looks like it's been through better days. As you get closer, you also notice a pair of suspiciously placed glittery red slippers and an attached note. \"Put me on and click your heels thrice while thinking of your greatest wish!\"");
+		System.out.println("Emerging through the gloom of the swamp, you stumble upon a old house that looks like it's been through better days."
+				+ "\nAs you get closer, you also notice a pair of suspiciously placed glittery red slippers and an attached note."
+				+ "\n\"Put me on and click your heels thrice while thinking of your greatest wish!\"");
 		
 	}
 
