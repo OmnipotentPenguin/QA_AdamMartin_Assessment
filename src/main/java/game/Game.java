@@ -44,16 +44,16 @@ public class Game {
 		switch (i) {
 		case 0:
 			System.out.println(
-					"\nYou feel something humming lightly on your arm. Looking down, you notice a compass strapped to your wrist."
+					"You feel something humming lightly on your arm. Looking down, you notice a compass strapped to your wrist."
 							+ "\nThe four cardinal points are on on its face, with a small dial near the bottom reading a distance and the needle is pointing off into the gloom.\n");
 			break;
 		case 5:
-			System.out.println("The gloom seems to loom closer to you, pushing in fronm all sides...");
+			System.out.println("The gloom seems to loom closer to you, pushing in fronm all sides...\n");
 			break;
 
 		case 10:
 			System.out.println(
-					"You see movement in the corner of your vision, but when you turn to get a proper look, nothing is there...");
+					"You see movement in the corner of your vision, but when you turn to get a proper look, nothing is there...\n");
 			break;
 		default:
 			break;
