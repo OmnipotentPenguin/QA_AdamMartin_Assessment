@@ -3,6 +3,8 @@ package testing;
 import org.junit.Assert;
 import org.junit.Test;
 
+import game.Player;
+
 
 public class InputTest {
 
@@ -28,7 +30,7 @@ public class InputTest {
 		int[] pLoc = player.playerLocation;
 		int xLoc = pLoc[0];
 		
-		player.goNorth();
+		player.goSouth();
 		
 		int [] pMoved = player.playerLocation;
 		int xMoved = pMoved[0];
@@ -43,7 +45,7 @@ public class InputTest {
 		int[] pLoc = player.playerLocation;
 		int yLoc = pLoc[0];
 		
-		player.goNorth();
+		player.goEast();
 		
 		int [] pMoved = player.playerLocation;
 		int yMoved = pMoved[0];
@@ -59,7 +61,7 @@ public class InputTest {
 		int[] pLoc = player.playerLocation;
 		int yLoc = pLoc[0];
 		
-		player.goNorth();
+		player.goWest();
 		
 		int [] pMoved = player.playerLocation;
 		int yMoved = pMoved[0];
