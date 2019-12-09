@@ -41,23 +41,26 @@ public class Player {
 
 	public int[] wanderAround(int[] playerLocation) {
 
-		Random rand = new Random();
-		int direction = rand.nextInt(4);
+		for (int i = 0; i < 3; i++) {
+			Random rand = new Random();
+			int direction = rand.nextInt(4);
 
-		switch (direction) {
-		case 0:
-			goNorth(playerLocation);
-			break;
-		case 1:
-			goSouth(playerLocation);
-			break;
-		case 2:
-			goEast(playerLocation);
-			break;
-		case 3:
-			goWest(playerLocation);
-			break;
+			switch (direction) {
+			case 0:
+				goNorth(playerLocation);
+				break;
+			case 1:
+				goSouth(playerLocation);
+				break;
+			case 2:
+				goEast(playerLocation);
+				break;
+			case 3:
+				goWest(playerLocation);
+				break;
+			}			
 		}
-		return playerLocation;
+		return playerLocation;		
 	}
+
 }
